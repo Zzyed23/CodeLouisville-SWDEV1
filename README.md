@@ -1,7 +1,7 @@
 # CodeLouisville-SWDEV1
 CodeLouisville SW dev 1 project
 
-So you may have noticed many fialed attempts of programming a bot in this repository. I didn't upload these in order and some times my computer crashed while making 
+So you may have noticed many failed attempts of programming a bot in this repository. I didn't upload these in order and some times my computer crashed while making 
 changes to the UI and I lost my code TWICE. Lesson learned. If you program a button in c# and try to compile and run but then go back and try to delete or edit the 
 button everything will break and 99% chance of you losing your code. My inital goal was to create a bot or web scraper to find the best price for a flight that the user
 would input. Going through the motions and learning how to program the application to take what you type and autofill a website and click the sumbit button took countless hours. But I came to a road block I didn't even think of when starting this project. The infamous "Are you human" check. I quickly learned most websites you
