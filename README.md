@@ -13,6 +13,6 @@ Read data from an external file, such as text, JSON, CSV, etc and use that data 
 
 Web Scraper parsing through data in the html
 
-Analyze text and display information about it (ex: how many words in a paragraph)
+Analyze text and display information about it 
 
 Information about what item it is, link to the item, how much it costs.
