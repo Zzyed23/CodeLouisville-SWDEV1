@@ -2,7 +2,7 @@
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
-using HtmlAgilityPack;  //using the HTMLagility pack to make our webscraping easier.
+using HtmlAgilityPack;  //using the HTMLagility pack to make our parsing easier
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -57,6 +57,12 @@ namespace PS5bot
             .Where(node => node.GetAttributeValue("class", "")
             .Equals("lvtitle")).FirstOrDefault().InnerText.Trim('\r', '\n', '\t')
             );
+
+            //will print out the URL
+            Console.WriteLine(
+                ProductListItems.Descendants('a').FirstOrDefault().GetAtttributeValue('href', ""));
+
+            
 
             Console.WriteLine();
         }
