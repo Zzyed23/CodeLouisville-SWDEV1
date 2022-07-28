@@ -39,21 +39,21 @@ namespace PS5bot
 
         var ProductListItems = ProductsHtml[0].Descendants("li") //looking for the list of products
             .Where(node => node.GetAttributeValue("id", "") //again another id tag
-            .Contains("item")).ToList();  
+            .Contains("item")).ToList();
 
         foreach (var Product in ProductListItems) // foreach loop to go through the html and display the contents below
         {
-            //will print the produc id
+            //will print the product id
             Console.WriteLine(ProductListItems.GetAttributeValue("lisitngid", ""));
 
             //will print the name of the product
-            Console.WriteLine((ProductListItems.Descendants("h3");
+            Console.WriteLine((ProductListItems.Descendants("h3"));
             .Where(node => node.GetAttributeValue("class", "")
-            .Equals("lvtitle")).FirstOrDefault().InnerText.Trim('\r', '\n', '\t')
+            .Equals("lvtitle")).FirstOrDefault().InnerText.Trim('\r', '\n', '\t');
             );
 
             //will print out the price
-            Console.WriteLine((ProductListItems.Descendants("li");
+            Console.WriteLine((ProductListItems.Descendants("li"));
             .Where(node => node.GetAttributeValue("class", "")
             .Equals("lvtitle")).FirstOrDefault().InnerText.Trim('\r', '\n', '\t')
             );
