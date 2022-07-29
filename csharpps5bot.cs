@@ -39,6 +39,9 @@ namespace PS5bot
                 .Where(node => node.GetAttributeValue("id", "") //again another id tag
                 .Contains("item")).ToList();
 
+            Console.WriteLine(ProductListItems.Count() + " Listings");
+            Console.WriteLine();
+
             foreach (var Product in ProductListItems) // foreach loop to go through the html and display the contents below
             {
                 //will print the product id
@@ -46,7 +49,7 @@ namespace PS5bot
 
                 //will print the name of the product
                 Console.WriteLine(Product.Descendants("h3")
-                .Where(node => node.GetAttributeValue("class", "")
+                .Where(node => node.GetAttributeValue("clas2qs", "")
                 .Equals("lvtitle")).FirstOrDefault().InnerText.Trim('\r', '\n', '\t')
                 );
 
@@ -56,20 +59,8 @@ namespace PS5bot
                 .Equals("lvprice prc")).FirstOrDefault().InnerText.Trim('\r', '\n', '\t')
                 );
 
-                //will print out the URL
-               // Console.WriteLine(
-                    //Product.Descendants("a").FirstOrDefault().GetAtttributeValue("href", ""));
-
-
-
                 Console.WriteLine();
             }
-
-
-
-
-
-            Console.WriteLine();
 
         }
     }
