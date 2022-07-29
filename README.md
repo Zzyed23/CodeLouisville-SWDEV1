@@ -9,10 +9,10 @@ would input. Going through the motions and learning how to program the applicati
 use to book your flights have some sort of bot protection so maybe people with the same idea as me couldn't get a 20$ flight to California. So this is where I pivoted this project and taking a new approach using same core concept of trying to find a good deal. I still wanted to make a Web Scraper of some sort so I settled on making a 
 scraper that will go through a listing on Ebay and show you all of the prices for the item. Using various youtube tutorials, the help of mentors, and trusty StackOverflow and you have my project. A Web Scraper that helps you get a good deal. 
 
-Read data from an external file, such as text, JSON, CSV, etc and use that data in your application (Instead of a file I am using a Website)
+Read data from an external file, such as text, JSON, CSV, etc and use that data in your application (Instead of a file I am using a Website).
 
-Web Scraper parsing through data in the html
+Web Scraper parsing through data in the html.
 
-Analyze text and display information about it 
+Analyze text and display information about it.
 
-Information about what item it is, how much it costs.
+Information about what item it is, how much it costs, and a direct link so you can purchase it.
